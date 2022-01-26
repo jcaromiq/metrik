@@ -4,12 +4,14 @@ import { BAMBOO_PIPELINE_CONFIG } from "./bambooConfig";
 import { GITHUB_ACTIONS_CONFIG } from "./githubActionsConfig";
 import { BAMBOO_DEPLOYED_PIPELINE_CONFIG } from "./bambooDeployedConfig";
 import { PipelineTool } from "../../models/pipeline";
+import { GITLAB_CONFIG } from "./gitlabConfig";
 
 export const PIPELINE_CONFIG = {
 	[PipelineTool.JENKINS]: JENKINS_PIPELINE_CONFIG,
 	[PipelineTool.BAMBOO]: BAMBOO_PIPELINE_CONFIG,
 	[PipelineTool.GITHUB_ACTIONS]: GITHUB_ACTIONS_CONFIG,
 	[PipelineTool.BAMBOO_DEPLOYMENT]: BAMBOO_DEPLOYED_PIPELINE_CONFIG,
+	[PipelineTool.GITLAB]: GITLAB_CONFIG,
 };
 
 export const PIPELINE_TYPE_NOTE = {
